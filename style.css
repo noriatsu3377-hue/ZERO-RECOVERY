@@ -375,11 +375,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-brand {
-    font-family: var(--font-en);
-    font-size: 0.9rem;
-    letter-spacing: 0.2em;
-    color: var(--color-text-sub);
     margin-bottom: var(--spacing-lg);
+}
+
+.logo-img {
+    max-width: 180px;
+    margin: 0 auto;
+    filter: grayscale(100%) brightness(1.2);
 }
 
 .hero-title {
@@ -956,10 +958,10 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px dashed var(--color-text-sub);
 }
 
-.placeholder-img.portrait {
+.profile-image img {
     width: 100%;
-    aspect-ratio: 3 / 4;
-    filter: grayscale(100%);
+    border: 1px solid var(--color-black-light);
+    filter: grayscale(80%) contrast(1.1);
 }
 
 .profile-header {
@@ -1087,6 +1089,21 @@ h1, h2, h3, h4, h5, h6 {
 .anatomy-body {
     font-size: 0.9rem;
     color: var(--color-text-sub);
+}
+
+.anatomy-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.anatomy-gallery img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border: 1px solid var(--color-black-light);
+    filter: grayscale(100%) contrast(1.2);
 }
 
 .message-section {
