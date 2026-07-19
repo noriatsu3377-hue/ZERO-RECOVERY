@@ -386,7 +386,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero-title {
-    font-size: clamp(2rem, 6vw, 3.5rem);
+    font-size: clamp(1.2rem, 5.5vw, 3rem);
     margin-bottom: var(--spacing-lg);
     line-height: 1.6;
 }
@@ -1553,4 +1553,5 @@ h1, h2, h3, h4, h5, h6 {
 
 .inline-block {
     display: inline-block;
+    white-space: nowrap;
 }
